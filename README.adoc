@@ -1,0 +1,14 @@
+= Docker Image with Hugo & AsciiDoc
+
+This repository contains the Dockerfile of a container image suitable for
+building static websites using https://gohugo.io/[Hugo] and
+https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc].
+
+The following software is available:
+
+* Hugo 0.137.0 extended
+* Node.js 22
+* Ruby
+* TexLive with `pdf2svg`
+
+https://github.com/jaburjak/ci-hugo-asciidoc/pkgs/container/ci-hugo-asciidoc[See image tags.]
