@@ -6,7 +6,7 @@ https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc].
 
 The following software is available:
 
-* Hugo 0.137.0 extended
+* Hugo 0.138.0 extended
 * Node.js 22
 * Ruby
 * TexLive with `pdf2svg`

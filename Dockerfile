@@ -9,10 +9,9 @@ RUN curl -fsSL 'https://deb.nodesource.com/setup_22.x' -o nodesource_setup.sh; \
   apt-get install -y nodejs
 
 RUN apt-get install -y ruby-full; \
-  gem install bundler; \
-  bundle config path vendor/bundle
+  gem install bundler
 
 RUN apt-get install -y texlive pdf2svg
 
-RUN curl -fsSL 'https://github.com/gohugoio/hugo/releases/download/v0.137.0/hugo_extended_0.137.0_linux-amd64.deb' -o hugo.deb; \
+RUN curl -fsSL 'https://github.com/gohugoio/hugo/releases/download/v0.138.0/hugo_extended_0.138.0_linux-amd64.deb' -o hugo.deb; \
   dpkg -i hugo.deb
