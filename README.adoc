@@ -6,9 +6,11 @@ https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc].
 
 The following software is available:
 
-* Hugo 0.138.0 extended
+* Hugo 0.139.0 extended
 * Node.js 22
 * Ruby
-* TexLive with `pdf2svg`
+** gems `asciidoctor`, `rouge`, `asciidoctor-katex` and `asciidoctor-diagram`
+* TexLive
+** with `pdf2svg`
 
 https://github.com/jaburjak/ci-hugo-asciidoc/pkgs/container/ci-hugo-asciidoc[See image tags.]
