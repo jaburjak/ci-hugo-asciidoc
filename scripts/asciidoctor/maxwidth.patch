@@ -1,0 +1,10 @@
+--- a/html5.rb
++++ b/html5.rb
+@@ -625,6 +625,7 @@
+   def convert_image node
+     target = node.attr 'target'
+     width_attr = (node.attr? 'width') ? %( width="#{node.attr 'width'}") : ''
++    width_attr = (node.attr? 'maxwidth') ? %(#{width_attr} style="max-width: #{node.attr 'maxwidth'};") : width_attr
+     height_attr = (node.attr? 'height') ? %( height="#{node.attr 'height'}") : ''
+     if ((node.attr? 'format', 'svg') || (target.include? '.svg')) && node.document.safe < SafeMode::SECURE
+       if node.option? 'inline'
