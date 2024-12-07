@@ -6,7 +6,7 @@ https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc].
 
 The following software is available:
 
-* Hugo 0.139.0 extended
+* Hugo 0.139.3 extended
 * Node.js 22
 * Ruby
 ** gems `asciidoctor`, `rouge`, `asciidoctor-katex` and `asciidoctor-diagram`
