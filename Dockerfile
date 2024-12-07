@@ -4,7 +4,7 @@ COPY Gemfile Gemfile.lock /usr/local/bundle/
 
 RUN apt-get update
 
-RUN apt-get install -y curl tar zip unzip jq
+RUN apt-get install -y curl tar zip unzip jq patch
 
 RUN curl -fsSL 'https://deb.nodesource.com/setup_22.x' -o nodesource_setup.sh; \
   bash nodesource_setup.sh; \

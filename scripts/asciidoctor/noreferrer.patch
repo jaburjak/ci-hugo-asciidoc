@@ -1,0 +1,12 @@
+--- a/html5.rb
++++ b/html5.rb
+@@ -1307,6 +1307,9 @@
+ 
+   def append_link_constraint_attrs node, attrs = []
+     rel = 'nofollow' if node.option? 'nofollow'
++    rel = (rel || '') + ' noreferrer' if node.option? 'noreferrer'
++    rel = rel.strip if rel
++    rel = nil if rel == ''
+     if (window = node.attributes['window'])
+       attrs << %( target="#{window}")
+       attrs << (rel ? %( rel="#{rel} noopener") : ' rel="noopener"') if window == '_blank' || (node.option? 'noopener')
