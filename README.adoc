@@ -12,5 +12,8 @@ The following software is available:
 ** Gems `asciidoctor`, `rouge`, `asciidoctor-katex` and `asciidoctor-diagram`.
 * TexLive
 ** Minimal LaTeX installation and `pdf2svg`, suitable for compilation of https://docs.asciidoctor.org/diagram-extension/latest/diagram_types/tikz/[TikZ diagrams].
+* Asciidoctor Server
+** Makes Asciidoc processing in Hugo significantly (about 10×) faster. For details, see the `asciidoctor-server` directory.
+* `inotify-tools`
 
 https://github.com/jaburjak/ci-hugo-asciidoc/pkgs/container/ci-hugo-asciidoc[See image tags.]

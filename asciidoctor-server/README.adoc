@@ -1,0 +1,14 @@
+= Asciidoctor Server
+
+Although Asciidoctor https://docs.asciidoctor.org/asciidoctor/latest/features/#impressive-performance-and-strong-security[boasts about high processing speed], its startup time is slow. Because Hugo spawns a new process
+for each document (and more if your theme is using https://gohugo.io/methods/page/renderstring/[`.RenderString`]), the startup cost of Asciidoctor adds up quickly and makes the build of a website with more than a few pages unbearably slow.
+
+A minimally-invasive (i.e. without having to modify Hugo or Asciidoctor themselves) workaround is to run a server program that always keeps Asciidoctor loaded and replace the regular `asciidoctor` executable with a client that forwards the document to the server for processing.
+
+This approach was devised and implemented by Varun Chari in https://github.com/hybras/asciidoctor-server[`hybras/asciidoctor-server`]. This Docker image is using a slightly modified version of their original code, which is available in this directory.
+
+* Working directory and base directory are correctly set for each processed document, so diagrams and other features that require `workingFolderCurrent = true` work.
+* The number of retries when server is busy is configurable via the CLI.
+* https://docs.asciidoctor.org/asciidoctor/latest/safe-modes/[Safe mode] is set to `unsafe`, which is the default value for Asciidoctor CLI (used by Hugo without the server workaround) but not for Asciidoctor API (used by the server).
+
+The server in this Docker image should _just work_, it gets started automatically whenever you run `hugo` and stops after Hugo finishes building your site.

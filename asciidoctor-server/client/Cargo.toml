@@ -1,0 +1,32 @@
+[package]
+name = "asciidoctor-client"
+version = "0.4.2"
+authors = ["hybras"]
+description = "A kludge to improve the performance of static site generators that use asciidoc through its cli"
+documentation = "https://github.com/hybras/asciidoctor-server"
+repository = "https://github.com/hybras/asciidoctor-server"
+edition = "2021"
+homepage = "https://github.com/hybras/asciidoctor-server"
+license = "MIT"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures = "0.3"
+tonic = "0.10.2"
+tower = "0.4"
+tokio = { version = "1.34", features = ["full"] }
+
+prost = "0.12"
+# Only necessary if using Protobuf well-known types:
+prost-types = "0.12.3"
+argh = "0.1.12"
+
+anyhow = "1.0.75"
+url = "2.5.0"
+cfg-if = "1.0.0"
+backon = "0.4.1"
+
+[build-dependencies]
+tonic-build = "0.10.2"

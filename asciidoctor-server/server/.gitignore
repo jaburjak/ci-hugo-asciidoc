@@ -1,0 +1,7 @@
+/.bundle/
+/vendor/bundle
+/pkg/
+/doc/
+/tmp/
+*.gem
+*.rbc
