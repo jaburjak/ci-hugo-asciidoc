@@ -9,16 +9,10 @@ GEM
       rexml
     asciidoctor-diagram-batik (1.17)
     asciidoctor-diagram-ditaamini (1.0.3)
-    asciidoctor-diagram-plantuml (1.2024.6)
+    asciidoctor-diagram-plantuml (1.2024.8)
       asciidoctor-diagram-batik (~> 1.17)
-    asciidoctor-katex (0.4.1)
-      asciidoctor (>= 1.5.6, < 3.0)
-      katex (~> 0.9.0)
-    execjs (2.10.0)
-    katex (0.9.0)
-      execjs (~> 2.7)
-    rexml (3.3.9)
-    rouge (4.4.0)
+    rexml (3.4.0)
+    rouge (4.5.1)
 
 PLATFORMS
   x86_64-linux
@@ -26,7 +20,6 @@ PLATFORMS
 DEPENDENCIES
   asciidoctor
   asciidoctor-diagram
-  asciidoctor-katex
   rouge
 
 BUNDLED WITH

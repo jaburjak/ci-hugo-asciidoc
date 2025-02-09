@@ -9,7 +9,7 @@ The following software is available:
 * Hugo 0.140.0 extended
 * Node.js 22
 * Ruby
-** Gems `asciidoctor`, `rouge`, `asciidoctor-katex` and `asciidoctor-diagram`.
+** Gems `asciidoctor`, `rouge` and `asciidoctor-diagram`.
 * TexLive
 ** Minimal LaTeX installation and `pdf2svg`, suitable for compilation of https://docs.asciidoctor.org/diagram-extension/latest/diagram_types/tikz/[TikZ diagrams].
 * Asciidoctor Server

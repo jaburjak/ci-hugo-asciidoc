@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
 gem 'asciidoctor'
 gem 'rouge'
-gem 'asciidoctor-katex'
 gem 'asciidoctor-diagram'
