@@ -7,4 +7,4 @@
 
 set -e
 
-patch -u "$(gem open -e echo asciidoctor)/lib/asciidoctor/converter/html5.rb" noreferrer.patch
+patch -u "$(gem open -e echo asciidoctor)/lib/asciidoctor/converter/html5.rb" 01-noreferrer.patch

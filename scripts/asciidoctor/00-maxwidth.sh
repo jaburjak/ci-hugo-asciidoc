@@ -7,4 +7,4 @@
 
 set -e
 
-patch -u "$(gem open -e echo asciidoctor)/lib/asciidoctor/converter/html5.rb" maxwidth.patch
+patch -u "$(gem open -e echo asciidoctor)/lib/asciidoctor/converter/html5.rb" 00-maxwidth.patch
