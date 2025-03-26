@@ -65,7 +65,7 @@ RUN tlmgr install pgf standalone
 
 RUN apt-get install -y inotify-tools
 
-RUN curl -fsSL 'https://github.com/gohugoio/hugo/releases/download/v0.143.1/hugo_extended_0.143.1_linux-amd64.deb' -o hugo.deb; \
+RUN curl -fsSL 'https://github.com/gohugoio/hugo/releases/download/v0.145.0/hugo_extended_0.145.0_linux-amd64.deb' -o hugo.deb; \
   dpkg -i hugo.deb
 
 RUN rm -rf /usr/local/scripts; \
